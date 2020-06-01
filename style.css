@@ -1,10 +1,11 @@
 body{
-   background-image: url("Wikimedium_Post.jpg");
+   /* background-image: url("Wikimedium_Post.jpg"); */
    background-repeat: no-repeat;
    background-position: top center;
 }
 
-h1, h2, h3, h4, p, ul, blockquote {
+
+h1, h2, h3, h4, p, ul, ol, blockquote {
   width: 700px;
   margin: auto;
   color: red;
@@ -21,8 +22,11 @@ h1, h2, h3, h4 {
   font-weight: bold;
 }
 
-p {
+p, blockquote, li {
   font-family: 'PT Sans', sans-serif;
+}
+
+p {
   font-size: 22px;
   line-height: 34px;
   margin-top: 30px;
@@ -43,12 +47,20 @@ h1 + p {
   }
 
 h2 {
-  margin-top: 158.75px;
+  margin-top: 79px;
   font-size: 32px;
   line-height: 36px;
 }
 
-h2 + p {
+h2 + p,
+h3 + p,
+h4 + p,
+h2 + blockquote,
+h3 + blockquote,
+h4 + blockquote,
+h2 + ul,
+h3 + ul,
+h4 + ul, {
   margin-top: 7px;
 }
 
@@ -62,48 +74,57 @@ h3 {
   margin-top: 35px;
 }
 
-h3 + p {
-  margin-top: 6px;
-}
-
 blockquote {
-  font-family: 'PT Sans', sans-serif;
+  position: relative;
   font-style: italic;
   font-size: 22px;
   line-height: 34px;
   margin-top: 29px;
 }
 
+blockquote::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: black;
+  margin-left: -20px;
+}
+
+blockquote > p {
+  margin-left: 500px;
+}
+
 h4 {
   font-size: 24px;
   line-height: 30px;
+  margin-top: 33px;
 }
 
 p + h4 {
   margin-top: 33px;
 }
 
-h4 + p {
-  margin-top: 7px;
-}
 
-ul {
-  font-family: 'PT Sans', sans-serif;
+ul, ol {
   width: 670px;
-  height: 170px;
-  color: red;
-  font-size: 22px;
-  line-height: 34px;
   margin-top: 29px;
 }
 
+
 li + li {
+  margin-top: 5px;
+}
+
+li {
+  font-size: 22px;
+  line-height: 34px;
   margin-top: 17px;
 }
 
-
-ul + p {
-  margin-top: 539px;
+ul + p, ol + p {
+  margin-top: 29px;
 }
 
 blockquote + h2 {
@@ -112,4 +133,12 @@ blockquote + h2 {
 
 h2 + h3 {
   margin-top: 37px;
+}
+
+b {
+  font-weight: bold;
+}
+
+i {
+  font-style: italic;
 }
