@@ -2,7 +2,18 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 50px;
+  margin: 50px 0 0 20px;
+  width: 300px;
+  padding: 14px 30px 27px;
+  opacity: 0.5;
+}
+
+nav:hover {
+  opacity: 1;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 nav ul {
@@ -10,17 +21,15 @@ nav ul {
 }
 
 nav li {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 15px;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 12px;
 }
 
-nav > ul > li {
+nav > ul > li:first-child {
   font-weight: bold;
 }
-
-
 
 nav ul ul li {
   color: rgba(0, 0, 0, 0.4);
