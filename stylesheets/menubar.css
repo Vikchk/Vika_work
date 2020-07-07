@@ -17,6 +17,7 @@ menu a {
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
 }
 
 menu a.current:hover {

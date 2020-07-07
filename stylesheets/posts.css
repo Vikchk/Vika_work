@@ -36,6 +36,10 @@ body.posts {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.postTeaser h2:first-child {
+  margin-top: 0;
+}
+
 .postTeaser p {
   margin-top: 8px;
   font-family: 'PT Sans', sans-serif;
@@ -45,29 +49,25 @@ body.posts {
 }
 
 @media (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
-  .postTeaser figure {
-  width: calc(100vw - 20px);
-  height: calc(100vw - 20px);
-  }
-}
-
-@media (max-width: 767px) {
-  .postTeaser {
-    display: inline;
-  }
-
   body.posts {
-    background: white;
+    padding: 120px 0;
+    background: none;
   }
 
-  .postTeaser p,
-  .postTeaser h2 {
-    margin: auto;
+  body.posts > section {
+    width: calc(100% - 20px);
+  }
+
+  .postTeaser {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .postTeaser figure {
     width: calc(100vw - 20px);
+    height: calc(100vw - 20px);
   }
-
-  .postTeaser h2 {
-    margin-top: 29px;
-  }
-
 }
