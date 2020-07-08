@@ -20,6 +20,12 @@ menu a {
   transition: color 0.3s ease;
 }
 
+menu a:first-child {
+  width: 180px;
+  height: 16px;
+  background-image: url('../images/logo.svg');
+}
+
 menu a.current:hover {
   color: rgba(0, 0, 0, 0.8);
 }
