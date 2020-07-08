@@ -7,19 +7,19 @@ body.landing {
 }
 
 #section-1-image {
-  background-image: url('../images/desktop-section-1-large.jpg')
+  background-image: url('../images/desktop-section-1-large.jpg');
   width: 1160px;
   height: 664px;
 }
 
 #section-2-image {
-  background-image: url('../images/desktop-section-2-large.jpg')
+  background-image: url('../images/desktop-section-2-large.jpg');
   width: 648px;
   height: 676px;
 }
 
 #section-3-image {
-  background-image: url('../images/desktop-section-3-large.jpg')
+  background-image: url('../images/desktop-section-3-large.jpg');
   width: 1393px;
   height: 883px;
 
