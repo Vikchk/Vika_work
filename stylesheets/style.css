@@ -5,4 +5,5 @@
 @import "post.css";
 @import "posts.css";
 @import "sidebar.css";
-@@import "landing.css";
+@import "landing.css";
+@import "footer.css";
